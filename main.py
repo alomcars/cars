@@ -1,3 +1,18 @@
+import streamlit as st
+import numpy as np
+import pandas as pd
+import home
+import data
+import plots
+import predict
+
+st.set_page_config(page_title = 'Car Price Prediction',
+                    page_icon = ':car:',
+                    layout = 'centered',
+                    initial_sidebar_state = 'auto'
+                    )
+
+words_dict = {"two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "eight": 8, "twelve": 12}
 def num_map(series):
     return series.map(words_dict
 
